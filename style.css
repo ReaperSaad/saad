@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6fab; /* Soft pink */
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Greeting Section */
+.greeting {
+    margin-bottom: 40px;
+}
+
+.greeting h2 {
+    font-size: 1.8em;
+    color: #f76285;
+}
+
+.greeting p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Photo Section */
+.photo img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+/* Timeline Section */
+.timeline ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.timeline li {
+    margin: 10px 0;
+    color: #ff6f91;
+}
+
+footer {
+    background-color: #ff6f91;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.1em;
+}
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #ff6f91, 0 0 10px #ff6f91; }
+    50% { text-shadow: 0 0 20px #ff6f91, 0 0 30px #ff6f91; }
+    100% { text-shadow: 0 0 5px #ff6f91, 0 0 10px #ff6f91; }
+}
+
+.highlight {
+    font-size: 1.2em;
+    color: #b96fff;
+    animation: glow 1.5s ease-in-out infinite;  /* Glowing effect */
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.heart {
+    font-size: 2em;
+    color: #ff6f91;
+    animation: float 1.5s ease-in-out infinite;
+} 
